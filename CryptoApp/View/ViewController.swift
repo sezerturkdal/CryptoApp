@@ -18,6 +18,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tblView.delegate = self
         tblView.dataSource = self
         
+        let url = URL(string:"https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/master/crypto.json")!
+        CurrencyService().downloadCurrencies(url: url) { items in
+            if let items = items{
+                
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

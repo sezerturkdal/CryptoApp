@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E546F0812968BEBB00C82490 /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F0802968BEBB00C82490 /* CryptoCurrency.swift */; };
+		E546F0832968C07100C82490 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F0822968C07100C82490 /* CurrencyService.swift */; };
 		E5594FFC2967727700C83330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5594FFB2967727700C83330 /* AppDelegate.swift */; };
 		E5594FFE2967727700C83330 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5594FFD2967727700C83330 /* SceneDelegate.swift */; };
 		E55950002967727700C83330 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5594FFF2967727700C83330 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		E546F0802968BEBB00C82490 /* CryptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
+		E546F0822968C07100C82490 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
 		E5594FF82967727700C83330 /* CryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5594FFB2967727700C83330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5594FFD2967727700C83330 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		E546F07F2968BE7500C82490 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				E546F0822968C07100C82490 /* CurrencyService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				E55950102967755C00C83330 /* CryptoTableViewCell.swift in Sources */,
 				E55950002967727700C83330 /* ViewController.swift in Sources */,
+				E546F0832968C07100C82490 /* CurrencyService.swift in Sources */,
 				E5594FFC2967727700C83330 /* AppDelegate.swift in Sources */,
 				E546F0812968BEBB00C82490 /* CryptoCurrency.swift in Sources */,
 				E5594FFE2967727700C83330 /* SceneDelegate.swift in Sources */,
