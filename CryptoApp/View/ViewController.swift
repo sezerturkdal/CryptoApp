@@ -11,12 +11,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
  
     @IBOutlet weak var tblView: UITableView!
     private var cryptoListViewModel : CryptoListViewModel!
+    var colorArray = [UIColor]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         tblView.delegate = self
         tblView.dataSource = self
+        self.colorArray = [
+            UIColor(red: 1/255, green: 1/255, blue: 1/255, alpha: 0.1),
+            UIColor(red: 1/255, green: 1/255, blue: 1/255, alpha: 0.3)
+        ]
         
         getData()
     }
@@ -42,8 +47,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "CryptoCell", for: indexPath) as! CryptoTableViewCell
         
         let cryptoViewModel = self.cryptoListViewModel.cryptoAtIndex(index: indexPath.row)
-        cell.lblPrice.text = cryptoViewModel.price
+        cell.lblPrice.text = cryptoViewModel.price + " ₺"
         cell.lblName.text = cryptoViewModel.name
+        cell.backgroundColor = self.colorArray[indexPath.row % 2]
         
          return cell
     }
