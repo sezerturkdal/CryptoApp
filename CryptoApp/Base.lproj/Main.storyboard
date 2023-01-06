@@ -28,17 +28,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOB-2c-nwq">
-                                                    <rect key="frame" x="29" y="19" width="334" height="12"/>
+                                                    <rect key="frame" x="29.666666666666657" y="19" width="334" height="12"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="334" id="OOp-VW-PuK"/>
-                                                        <constraint firstAttribute="height" constant="12" id="ObI-wq-ddv"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi2-R7-2Qg">
-                                                    <rect key="frame" x="29" y="49" width="334" height="40"/>
+                                                    <rect key="frame" x="29.666666666666657" y="49" width="334" height="40"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -49,15 +48,15 @@
                                                 <constraint firstItem="BOB-2c-nwq" firstAttribute="centerY" secondItem="okw-zk-4Al" secondAttribute="centerY" constant="-19.5" id="68n-ZF-PuH"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Wi2-R7-2Qg" secondAttribute="bottom" constant="-11" id="9q5-Df-uNl"/>
                                                 <constraint firstItem="BOB-2c-nwq" firstAttribute="centerX" secondItem="okw-zk-4Al" secondAttribute="centerX" id="RW9-A8-Hap"/>
-                                                <constraint firstItem="Wi2-R7-2Qg" firstAttribute="top" secondItem="BOB-2c-nwq" secondAttribute="bottom" constant="18" id="drJ-op-TGI"/>
+                                                <constraint firstItem="Wi2-R7-2Qg" firstAttribute="top" secondItem="BOB-2c-nwq" secondAttribute="bottom" constant="10" id="drJ-op-TGI"/>
                                                 <constraint firstItem="BOB-2c-nwq" firstAttribute="top" secondItem="okw-zk-4Al" secondAttribute="topMargin" constant="8" id="ehO-H3-qG4"/>
                                                 <constraint firstItem="BOB-2c-nwq" firstAttribute="centerX" secondItem="Wi2-R7-2Qg" secondAttribute="centerX" id="iIA-Vi-pee"/>
                                                 <constraint firstItem="BOB-2c-nwq" firstAttribute="leading" secondItem="Wi2-R7-2Qg" secondAttribute="leading" id="j9v-fl-PL3"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="lblCurrency" destination="okw-zk-4Al" id="lEr-ac-wdH"/>
-                                            <outlet property="lblPrice" destination="Wi2-R7-2Qg" id="M88-WE-OGy"/>
+                                            <outlet property="lblName" destination="BOB-2c-nwq" id="tOI-nb-Pyv"/>
+                                            <outlet property="lblPrice" destination="Wi2-R7-2Qg" id="JHJ-Bs-wJr"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
